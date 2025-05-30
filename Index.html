@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Log-In | Online Voting | Mini Project</title>
+    <style>
+        body {
+            background-image: url(".jpeg");
+            background-color: #cccccc;
+            background-repeat: no-repeat;
+        }
+        
+        img {
+            padding-top: 50px;
+        }
+        
+        .btn {
+            min-width: 100px;
+            max-width: 250px;
+            width: 100%;
+            background-color: rgb(158, 99, 255);
+            color: #fff;
+            font-size: 16px;
+            padding: 10px;
+            font-weight: 500;
+            border-radius: 20px;
+            border: thin 2px rgb(250, 91, 91);
+            margin-bottom: 20px;
+        }
+        
+        .btn:hover {
+            background-color: rgb(158, 83, 255);
+            color: #000;
+        }
+        
+        label {
+            text-align: center;
+            padding: 0px 10px;
+        }
+        
+        .put {
+            width: 170px;
+            padding: 10px;
+            margin: 15px;
+            box-shadow: 5px 5px 10px rgb(110, 110, 110);
+            border-radius: 5px;
+        }
+        
+        a:hover {
+            color: rgb(201, 149, 70);
+        }
+        
+        .box {
+            max-width: 350px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #c4c4ff;
+            border: 1px solid #e6e6e6;
+            border-radius: 5px;
+            box-shadow: 5px 5px 20px rgb(110, 110, 110);
+            margin: 0 0 10px;
+            padding: 10px 0;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <center><img src="logo.jpeg" width="120" height="100">
+        <form action="check.php" method="POST"><br>
+            <h1><b>Log-In</b></h1><br>
+            <table class="box">
+                <tr>
+                    <th><label> Username :-</label></th>
+                    <td><input class="put" type="text" placefolder="UserName" name="username" id="user"></td>
+                </tr>
+                <tr>
+                    <th><label> Password :-</label></th>
+                    <td><input class="put" type="password" placefolder="Password" name="password" id="use"></td>
+                </tr>
+                <tr>
+                    <td><label> Select Role <label></td>
+                    <th><select class="put" name="role">
+                        <option value="Student">Student</option>
+                        <option value="Candiadte">Candiadte</option>
+                    </select></th>
+                </tr>
+            </table><br>
+            <input class="btn" type="submit" value="Log-In">
+        </form><br>
+        New User?<a href="signup.php"> Register Here.</a><br><br><br>
+        <a href="adminlogin.php">Admin/Teacher Log-In</a><br>
+    </center>
+</body>
+</html>s
